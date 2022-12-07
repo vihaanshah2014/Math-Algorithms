@@ -42,13 +42,13 @@ class Summation_Notation{
 
     for(int j = k; j < i + 1; j++){
         sum += y(j);
-    }
+    } // for loop to find all the numbers between the lower and upper bound
 
     System.out.println("\n---------- \nSum is: " + sum + "\n----------");
 
     System.out.println("\nDo you want it as a fraction?");
     System.out.println("No[0] \nYes[1]");
-    int lol = s.nextInt();
+    int lol = s.nextInt(); //determines if it should be a fraction
     if(lol == 1){
         System.out.println("\n---------- \nSum is: " + convertDecimalToFraction((sum)) + "\n----------");
     }
